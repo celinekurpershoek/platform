@@ -59,7 +59,9 @@ public class PlayerMovement : MonoBehaviour
 
     public float GetInputHorizontal()
     {
-        #if UNITY_ANDROID 
+        #if UNITY_EDITOR
+            return Input.GetAxisRaw("Horizontal") + HorizontalMovementValue;
+        #elif UNITY_ANDROID
             return HorizontalMovementValue;
         #else
             return Input.GetAxisRaw("Horizontal");

@@ -12,15 +12,21 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;
     bool crouch = false;
 
+    public float HorizontalMovementValue
+    {
+        get => horizontalMovementValue;
+        set => horizontalMovementValue = value;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        horizontalMove = GetInputHorizontal() * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if(Input.GetButtonDown("Jump")) {
-            animator.SetBool("IsJumping", true);
-            jump = true;
+        if(Input.GetButtonDown("Jump"))
+        {
+            Jump();
         }
         if (Input.GetButtonDown("Crouch"))
         {
@@ -31,7 +37,12 @@ public class PlayerMovement : MonoBehaviour
             crouch = false;
         }
         
+    }
 
+    public void Jump()
+    {
+        animator.SetBool("IsJumping", true);
+        jump = true;
     }
 
     public void onLanding ()
@@ -45,4 +56,15 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
     }
+
+    public float GetInputHorizontal()
+    {
+        #if UNITY_ANDROID 
+            return HorizontalMovementValue;
+        #else
+            return Input.GetAxisRaw("Horizontal");
+        #endif
+    }
+
+    private float horizontalMovementValue;
 }

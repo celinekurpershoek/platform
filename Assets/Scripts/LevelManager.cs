@@ -22,7 +22,7 @@ public class LevelManager
 
     public void ReloadLevel()
     {
-        SceneManager.LoadScene("platform");
+        SceneManager.LoadScene("Level2");
     }
 
     public void LevelCompleted()

@@ -42,14 +42,13 @@ public class PlayerMovement : MonoBehaviour
     public void Jump()
     {
         animator.SetBool("IsJumping", true);
-
         jump = true;
     }
 
     public void onLanding ()
     {
         animator.SetBool("IsJumping", false);
-        AudioManager.Instance.Play("PlayerJump");
+        AudioManager.Instance.Play("PlayerLand");
     }
 
     void FixedUpdate()

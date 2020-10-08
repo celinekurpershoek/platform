@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Managers;
+using Packages.ServiceLocator;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private LevelManager levelManager => ServiceLocatorManager.Instance.Resolve<LevelManager>();
+    
     private Health health;
 
     private void Awake()
@@ -16,7 +20,7 @@ public class Player : MonoBehaviour
 
     private void Death()
     {
-        Destroy(this.gameObject);
-        LevelManager.Instance.ReloadLevel();
+        Destroy(gameObject);
+        levelManager.ReloadCurrentLevel();
     }
 }

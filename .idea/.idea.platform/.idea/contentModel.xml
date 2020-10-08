@@ -10,19 +10,39 @@
             <e p="Readme.txt" t="Include" />
           </e>
         </e>
+        <e p="Data" t="Include">
+          <e p="Level.cs" t="Include" />
+          <e p="LevelsConfiguration.cs" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
-          <e p="AudioManager.cs" t="Include" />
-          <e p="CharacterController2D.cs" t="Include" />
-          <e p="DamageEffector.cs" t="Include" />
-          <e p="GameManager.cs" t="Include" />
-          <e p="Health.cs" t="Include" />
-          <e p="LevelCompleteChest.cs" t="Include" />
-          <e p="LevelManager.cs" t="Include" />
-          <e p="Player.cs" t="Include" />
-          <e p="PlayerMovement.cs" t="Include" />
-          <e p="Sound.cs" t="Include" />
-          <e p="UIManager.cs" t="Include" />
-          <e p="UIPresser.cs" t="Include" />
+          <e p="Audio" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+            <e p="Sound.cs" t="Include" />
+          </e>
+          <e p="Game" t="Include">
+            <e p="Health.cs" t="Include" />
+          </e>
+          <e p="LevelComponents" t="Include">
+            <e p="DamageEffector.cs" t="Include" />
+            <e p="LevelCompleteChest.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="GameManager.cs" t="Include" />
+            <e p="LevelManager.cs" t="Include" />
+            <e p="LevelUIManager.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="CharacterController2D.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="StartButton.cs" t="Include" />
+            <e p="UIPresser.cs" t="Include" />
+          </e>
+          <e p="Utils" t="Include">
+            <e p="ScriptableObjectHelper.cs" t="Include" />
+          </e>
         </e>
         <e p="Tayx" t="Include">
           <e p="Graphy - Ultimate Stats Monitor" t="Include">

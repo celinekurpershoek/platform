@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class LevelUIManager : MonoBehaviour
 {
-    public static UIManager Instance;
+    public static LevelUIManager Instance;
     public GameObject levelCompletedMenu;
     private PlayerMovement playerMovement;
     public GameObject mobileUi;

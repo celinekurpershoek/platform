@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class LevelManager
 {
     private static LevelManager instance;
-
     private string currentLevel;
 
     public static LevelManager Instance
@@ -28,6 +27,8 @@ public class LevelManager
 
     public void LevelCompleted()
     {
+        AudioManager.Instance.Play("OpenChest");
+        UIManager.Instance.ShowLevelCompletedMenu();
         Debug.Log("Gewonnen!");
     }
 }

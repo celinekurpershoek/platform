@@ -5,12 +5,16 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private int startHealth = 1;
+    [SerializeField] private int startHealth = 3;
 
     private int currentHealth;
 
     public Action OnDeath;
 
+    private void Awake()
+    {
+        currentHealth = startHealth;
+    }
     public int CurrentHealth
     {
         get => currentHealth;
@@ -27,7 +31,8 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Debug.Log($"Take Damage:{damage}");
+        Debug.Log($"Take Damage:{damage} {CurrentHealth}");
+        AudioManager.Instance.Play("PlayerHit"); 
         CurrentHealth -= damage;
     }
 }

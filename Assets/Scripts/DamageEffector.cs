@@ -12,6 +12,7 @@ public class DamageEffector : MonoBehaviour
         if (health != null)
         {
             health.TakeDamage(damage);
+            AudioManager.Instance.Play("PlayerHit"); 
         }
     }
 }

@@ -5,17 +5,24 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager Instance;
+    public GameObject levelCompletedMenu;
     private PlayerMovement playerMovement;
     public GameObject mobileUi;
 
+
     private void Awake()
     {
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
         playerMovement = FindObjectOfType<PlayerMovement>();
-        
+        levelCompletedMenu.SetActive(false);
+
         #if UNITY_ANDROID
-            mobileUi.SetActive(true);
+        mobileUi.SetActive(true);
         #else
-            mobileUi.SetActive(false);
+        mobileUi.SetActive(false);
         #endif
     }
 
@@ -32,5 +39,10 @@ public class UIManager : MonoBehaviour
     public void PlayerJump()
     {
         playerMovement.Jump();
+    }
+
+    public void ShowLevelCompletedMenu()
+    {
+        levelCompletedMenu.SetActive(true);
     }
 }

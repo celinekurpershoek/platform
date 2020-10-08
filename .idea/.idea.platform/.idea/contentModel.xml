@@ -11,13 +11,16 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AudioManager.cs" t="Include" />
           <e p="CharacterController2D.cs" t="Include" />
           <e p="DamageEffector.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="Health.cs" t="Include" />
           <e p="LevelCompleteChest.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
+          <e p="Sound.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
           <e p="UIPresser.cs" t="Include" />
         </e>

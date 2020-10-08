@@ -35,10 +35,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/37/ee59fbd2/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelCompleteChest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Projects/platform/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamageEffector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Projects/platform/Assets/Scenes/platform.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Projects/platform/Assets/Prefabs/UI.prefab" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -110,6 +112,14 @@
       <updated>1601925380294</updated>
       <workItem from="1601925383606" duration="5885000" />
     </task>
+    <task id="LOCAL-00001" summary="restructured the scene and created prefabs">
+      <created>1602180514429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602180514429</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,12 +141,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="restructured the scene and created prefabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="restructured the scene and created prefabs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="781" y="345" key="SettingsEditor" timestamp="1601927038581">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1601927038581" />
+    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602179629878">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1602179629878" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1601926142263">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

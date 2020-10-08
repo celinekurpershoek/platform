@@ -526,9 +526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc29c8f02c17894db9ae958a30c806d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCompletedMenu: {fileID: 0}
+  levelCompletedMenu: {fileID: 7684241063357448455}
   mobileUi: {fileID: 758539221}
-  showLevelMenu: 0
 --- !u!1 &2349568226580144956
 GameObject:
   m_ObjectHideFlags: 0

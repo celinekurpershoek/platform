@@ -12,7 +12,7 @@
         </e>
         <e p="Data" t="Include">
           <e p="Level.cs" t="Include" />
-          <e p="LevelsConfiguration.cs" t="Include" />
+          <e p="LevelConfig.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="Audio" t="Include">
@@ -42,6 +42,7 @@
           </e>
           <e p="Utils" t="Include">
             <e p="ScriptableObjectHelper.cs" t="Include" />
+            <e p="SingletonScriptableObject.cs" t="Include" />
           </e>
         </e>
         <e p="Tayx" t="Include">

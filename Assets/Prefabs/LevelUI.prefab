@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 1186919313}
   - component: {fileID: 1186919312}
   - component: {fileID: 1186919311}
+  - component: {fileID: 6912066341485676856}
   m_Layer: 5
   m_Name: Jump
   m_TagString: Untagged
@@ -398,18 +399,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1186919312}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4765812244740604914}
-        m_MethodName: PlayerJump
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &6912066341485676856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186919309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55684e32dd20124db90ac83c7a74416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1750486912613819719
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8175251348407376248
 RectTransform:
   m_ObjectHideFlags: 0

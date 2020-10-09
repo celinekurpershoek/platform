@@ -14,7 +14,7 @@ namespace Managers
 
         public void Init()
         {
-            levelsConfiguration = ScriptableObjectHelper.FindScriptableObject<LevelConfig>();
+            levelsConfiguration = Resources.Load<LevelConfig>("LevelConfig");
             Debug.Log(levelsConfiguration);
         }
 
@@ -52,7 +52,7 @@ namespace Managers
         {
             AudioManager.Instance.Play("OpenChest");
             LoadNextLevel();
-            LevelUIManager.Instance.ShowLevelCompletedMenu();
+            //LevelUIManager.Instance.ShowLevelCompletedMenu();
             Debug.Log("Gewonnen!");
         }
     }

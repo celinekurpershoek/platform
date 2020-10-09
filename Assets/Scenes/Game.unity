@@ -183,6 +183,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5462315650815540669, guid: 9e7d317e7f4653b4d8906f2e815670f0,
+        type: 3}
+      propertyPath: LevelConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bb866096eff37b4ba0237a5710b591d,
+        type: 2}
+    - target: {fileID: 5462315650815540669, guid: 9e7d317e7f4653b4d8906f2e815670f0,
+        type: 3}
+      propertyPath: Level
+      value: 
+      objectReference: {fileID: 11400000, guid: dcd3e01deec7326419a31fa0bc12f346,
+        type: 2}
     - target: {fileID: 5462315650815540670, guid: 9e7d317e7f4653b4d8906f2e815670f0,
         type: 3}
       propertyPath: m_Name
@@ -201,6 +213,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488863873283480172, guid: 84eecb7e913804d4e8fc5cfe3ad1abdb,
+        type: 3}
+      propertyPath: sounds.Array.data[0].name
+      value: PlayerLand
       objectReference: {fileID: 0}
     - target: {fileID: 8488863873283480173, guid: 84eecb7e913804d4e8fc5cfe3ad1abdb,
         type: 3}

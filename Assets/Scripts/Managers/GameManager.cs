@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Data;
 using Managers;
 using Packages.ServiceLocator;
 using UnityEngine;
@@ -14,6 +15,9 @@ public class GameManager : MonoBehaviour
     {
         ServiceLocatorManager.Instance.Register<LevelManager>(new LevelManager());
     }
+
+    public LevelConfig LevelConfig;
+    public Level Level;
 
     public void Awake()
     {
